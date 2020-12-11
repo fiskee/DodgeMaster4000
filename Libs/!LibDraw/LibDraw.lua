@@ -16,7 +16,7 @@ end
 
 if LibStub then
 	-- LibStub version control
-	LibDraw = LibStub:NewLibrary("LibDraw-1.0", 3)
+	LibDraw = LibStub:NewLibrary("LibDrawDM-1.0", 3)
 	if not LibDraw then return end
 else
 	-- Pretty much LibStub

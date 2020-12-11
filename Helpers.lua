@@ -1,6 +1,6 @@
 local DM = DodgeMaster
 DM.Helpers = {}
-local LibDraw = LibStub("LibDraw-1.0")
+local LibDraw = LibStub("LibDrawDM-1.0")
 
 function DM.Helpers.DrawLine(sx, sy, sz, ex, ey, ez)
     local function WorldToScreen(wX, wY, wZ)

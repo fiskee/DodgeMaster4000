@@ -23,7 +23,7 @@ f:SetScript(
     function(self, elapsed)
         DM.Time = GetTime()
         if EWT ~= nil then
-            LibStub("LibDraw-1.0").clearCanvas()
+            LibStub("LibDrawDM-1.0").clearCanvas()
             if not Init then
                 Initialize()
             end

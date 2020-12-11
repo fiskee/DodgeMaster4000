@@ -1,6 +1,6 @@
 local DM = DodgeMaster
 local Unit = DM.Classes.Unit
-local LibDraw = LibStub("LibDraw-1.0")
+local LibDraw = LibStub("LibDrawDM-1.0")
 
 function Unit:New(Pointer)
     self.Pointer = Pointer
