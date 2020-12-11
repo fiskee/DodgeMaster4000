@@ -1,0 +1,25 @@
+## Interface: 90200
+## Author: Fisker
+## Version: 1.0
+## Title: Dodge Master 4000
+## SavedVariables: DodgeMasterSettings
+
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Libs\LibSharedMedia-3.0\lib.xml
+Libs\AceGUI-3.0\AceGUI-3.0.xml
+Libs\LibDBIcon-1.0\LibDataBroker-1.1\LibDataBroker-1.1.lua
+Libs\LibDBIcon-1.0\LibDBIcon-1.0\lib.xml
+Libs\!LibDraw\LibDraw.lua
+
+Core.lua
+
+Classes\Classes.lua
+Classes\AreaTrigger.lua
+Classes\GameObject.lua
+Classes\Unit.lua
+
+ObjectManager.lua
+OptionsUI.lua
+Enums.lua
+Helpers.lua
