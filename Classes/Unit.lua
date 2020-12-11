@@ -19,7 +19,7 @@ function Unit:Update()
         self.NextUpdate = DM.Time + (math.random(300, 1500) / 10000)
         self.Distance = self:GetDistance()
         if self.Distance > 50 then
-            self.NextUpdate = DMW.Time + (math.random(500, 1000) / 1000)
+            self.NextUpdate = DM.Time + (math.random(500, 1000) / 1000)
         end 
         if self.Name == "Unknown" then
             self.Name = UnitName(self.Pointer)
