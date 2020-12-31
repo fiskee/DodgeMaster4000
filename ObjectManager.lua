@@ -58,12 +58,12 @@ function DM.UpdateOM()
                 Units[v] = Unit(v)
             -- elseif not GameObjects[v] and ObjectIsGameObject(v) then
             --     GameObjects[v] = GameObject(v)
-            -- elseif not AreaTriggers[v] and ObjectIsAreaTrigger(v) then
-            --     AreaTriggers[v] = AreaTrigger(v)
+            elseif not AreaTriggers[v] and ObjectIsAreaTrigger(v) then
+                AreaTriggers[v] = AreaTrigger(v)
             end
         end
     end
     UpdateUnits()
     -- UpdateGameObjects()
-    -- UpdateAreaTriggers()
+    UpdateAreaTriggers()
 end

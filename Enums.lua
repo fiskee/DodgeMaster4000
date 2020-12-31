@@ -2,10 +2,9 @@ local DM = DodgeMaster
 DM.Enums = {}
 
 --Format for cone is angle, length
---Format for rect is width, length
+--Format for rect is length, width 
 DM.Enums.Casts = {
     --Shadowlands
-
     --NecroticWake
     [324323] = {"cone", 5, 120}, --Gruesome Cleave
     -- [333489] = {"rect", 25, 10}, --Amarth Necrotic Breath???????????????????????
@@ -18,6 +17,7 @@ DM.Enums.Casts = {
     [340160] = {"cone", 20, 45}, --Radiant Breath
     [340300] = {"cone", 12, 60}, --Tongue Lashing
     --PlagueFall
+    [324667] = {"cone", 100, 60}, -- Slime Wave
     [328395] = {"cone", 15, 30}, --Venompiercer
     [330404] = {"rect", 15, 10}, --Wing Buffet
     [318949] = {"cone", 20, 60}, --FesteringBelch
@@ -38,12 +38,19 @@ DM.Enums.Casts = {
     [323943] = {"rect", 25, 4}, --Run Through
     [324205] = {"cone", 30, 25}, --Blinding Flash
     --Theeatre of Pain
-
     --misc
     [331718] = {"cone", 60, 15}, --Spear Flurry ???
     [333294] = {"rect", 25, 10}, --Death Winds ??? or 333297
     [334329] = {"cone", 60, 15}, --Sweeping Slash
     -- [330403] = {"rect", 10, 20}, --WingBuffet ???
     [329518] = {"cone", 60, 20},
-    [326455] = {"cone", 75, 10}
+    [326455] = {"cone", 75, 10},
+    [329181] = {"rect", 15, 5} --last Cleave
+}
+
+DM.Enums.Triggers = {
+    --Shadowlands
+    --Spires of Ascension
+    [23839] = {"rect", 30, 2}, --First boss
+    [23813] = {"rect", 40, 2} --Second boss
 }
