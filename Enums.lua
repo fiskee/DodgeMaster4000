@@ -49,7 +49,7 @@ DM.Enums.Casts = {
 }
 
 DM.Enums.Triggers = {
-    --Shadowlands
+    -- Shadowlands 
     --Spires of Ascension
     [23839] = {"rect", 30, 2}, --First boss
     [23813] = {"rect", 40, 2} --Second boss
