@@ -15,6 +15,9 @@ function AreaTrigger:Update()
     if not self.Name or self.Name == "" then
         self.Name = ObjectName(self.Pointer)
     end
+    if DM.Settings.Developer then
+        LibDraw.Text("Area Trigger: " .. self.ObjectID .. " - " .. math.floor(self.Distance) .. " Yards", "GameFontNormal", self.PosX, self.PosY, self.PosZ + 2)
+    end
     if DM.Settings.Draw then
         self:Draw()
     end

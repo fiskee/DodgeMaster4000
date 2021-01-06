@@ -1,6 +1,7 @@
 DodgeMaster = {}
 local DM = DodgeMaster
 local Init = false
+local LibDraw = LibStub("LibDrawDM-1.0")
 
 local function DefaultSettings()
 end
@@ -23,7 +24,8 @@ f:SetScript(
     function(self, elapsed)
         DM.Time = GetTime()
         if EWT ~= nil then
-            LibStub("LibDrawDM-1.0").clearCanvas()
+            LibDraw.clearCanvas()
+            LibDraw.SetColorRaw(0, 1, 0)
             if not Init then
                 Initialize()
             end
